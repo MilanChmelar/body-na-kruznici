@@ -41,6 +41,7 @@ st.pyplot(fig)
 with st.expander("O aplikaci"):
     st.write("""
     **Autor:** Milan Chmelař  (a samozřejmě CHATGPT.com a CLAUDE.AI)
+    
     **Kontakt:** mildamilda0@post.cz  
     **Škola**: Vysoké Učení Technické Brno - Fakulta Stavební
     
@@ -65,6 +66,7 @@ if st.button("Uložit do PDF"):
     st.success("PDF bylo vytvořeno.")
     with open(pdf_file, "rb") as f:
         st.download_button("Stáhnout PDF", f, file_name="vystup.pdf")
+
 
 
 
