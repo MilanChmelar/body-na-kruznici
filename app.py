@@ -41,7 +41,8 @@ st.pyplot(fig)
 with st.expander("O aplikaci"):
     st.write("""
     **Autor:** Milan Chmelař  
-    **Kontakt:** milan.chmelar@email.cz  
+    **Kontakt:** mildamilda0@post.cz  
+    **Škola*: Vysoké Učení Technické Brno - Fakulta Stavební
     **Použité technologie:** Python, Streamlit, Matplotlib, ReportLab  
     """)
 
@@ -57,9 +58,10 @@ if st.button("Uložit do PDF"):
     text.textLine(f"Počet bodů: {n}")
     text.textLine(f"Barva: {color}")
     text.textLine("")
-    text.textLine("Autor: Milan Chmelař, Kontakt: milan.chmelar@email.cz")
+    text.textLine("Autor: Milan Chmelař, Kontakt: mildamilda0@post.cz")
     c.drawText(text)
     c.save()
     st.success("PDF bylo vytvořeno.")
     with open(pdf_file, "rb") as f:
         st.download_button("Stáhnout PDF", f, file_name="vystup.pdf")
+
